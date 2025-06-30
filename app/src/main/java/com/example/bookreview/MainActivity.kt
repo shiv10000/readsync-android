@@ -22,7 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.bookreview.navigation.NavigationRoot
+  import com.example.bookreview.navigation.RootGraph
 import com.example.bookreview.screens.Home1
 import com.example.bookreview.screens.HomeScreen
  import com.example.bookreview.ui.theme.BookReviewTheme
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BookReviewTheme {
-                NavigationRoot()
+                RootGraph()
              }
         }
     }
