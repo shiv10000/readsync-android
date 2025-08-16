@@ -47,8 +47,6 @@ sealed class BottomBarScreen(
         title = "Profile"
     )
 
-
-
 }
 
 

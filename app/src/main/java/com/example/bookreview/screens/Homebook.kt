@@ -1,8 +1,6 @@
 package com.example.bookreview.screens
 
-import BookDoc
-import LibraryUiState
-import OpenlibraryViewModel
+
  import android.annotation.SuppressLint
 import androidx.collection.mutableObjectIntMapOf
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -58,8 +56,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.bookreview.AppFonts
+ import com.example.bookreview.Network.BookDoc
  import com.example.bookreview.R
  import kotlinx.serialization.modules.serializersModuleOf
 import java.nio.file.WatchEvent
@@ -107,7 +107,7 @@ fun HomeScreen(modifier: Modifier = Modifier,
 
 fun Home1() {
 
-        val openlibraryViewModel: OpenlibraryViewModel = viewModel()
+        val openlibraryViewModel: OpenlibraryViewModel = hiltViewModel()
         val libraryUiState by openlibraryViewModel.books.collectAsState()
 
     Column {

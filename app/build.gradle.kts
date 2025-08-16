@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
      alias(libs.plugins.kotlin.compose)
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.10"
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 
 }
 
@@ -67,6 +69,11 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     implementation(libs.androidx.navigation3.ui)
+    implementation("com.google.dagger:hilt-android:2.56.2")
+    ksp("com.google.dagger:hilt-android-compiler:2.56.2")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     implementation(libs.androidx.navigation3.runtime)
+    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
+
 
 }

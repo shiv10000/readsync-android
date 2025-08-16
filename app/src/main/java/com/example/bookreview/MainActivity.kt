@@ -26,7 +26,9 @@ import androidx.compose.ui.unit.dp
 import com.example.bookreview.screens.Home1
 import com.example.bookreview.screens.HomeScreen
  import com.example.bookreview.ui.theme.BookReviewTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

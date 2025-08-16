@@ -1,3 +1,5 @@
+package com.example.bookreview.Network
+
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
